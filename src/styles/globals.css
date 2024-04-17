@@ -16,6 +16,17 @@ root {
   text-decoration: none;
 }
 
-a{
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+a {
   text-decoration: none;
 }
