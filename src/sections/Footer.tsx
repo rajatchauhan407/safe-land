@@ -11,6 +11,9 @@ const FooterContainer = styled('footer')(({ theme }) => ({
   backgroundColor: '#1e1e1e',
   color: '#ffffff',
   padding: '40px 20px',
+  display: 'flex',  
+  alignItems: 'center', 
+  justifyContent: 'center'
 }));
 
 const buttonText = "Download Proposal";
@@ -53,6 +56,7 @@ const Footer: React.FC = () => {
 
   return (
     <FooterContainer>
+      <Box sx={{width:"95%"}}>
       <Grid container spacing={isMobile ? 2 : 4} justifyContent="center">
         {/* Left Column */}
         <Grid item xs={12} md={6} sx={{ textAlign: isMobile ? 'center' : 'left', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
@@ -85,6 +89,7 @@ const Footer: React.FC = () => {
           </div>
         </Grid>
       </Grid>
+      </Box>
     </FooterContainer>
   );
 };

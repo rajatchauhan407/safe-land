@@ -56,13 +56,14 @@ const FutureFeaturesSection = () => {
   const theme = useTheme();
 
   return (
-    <Box sx={{ flexGrow: 1, p: 3, backgroundColor: "#F8F8FF", minHeight:"50vh" }}>
+    <Box sx={{ display:"flex", flexDirection:"column", p: 3, backgroundColor: "#F8F8FF", minHeight:"50vh", justifyContent: 'center', alignItems:'center'}}>
+      <Box sx={{width:"80%"}}>
       <Typography 
           variant="h3"
           component="h2"
           fontWeight={800}
           color="#4a4a4b"
-          sx={{textAlign:'center'}}
+          sx={{textAlign:'center', marginBottom: 4}}
           >
           <span style={{ fontWeight: 200 }}>Features</span> Coming Soon
           </Typography>
@@ -89,6 +90,7 @@ const FutureFeaturesSection = () => {
           />
         </Grid>
       </Grid>
+      </Box>
     </Box>
   );
 };
