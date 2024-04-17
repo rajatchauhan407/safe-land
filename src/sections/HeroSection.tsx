@@ -13,7 +13,7 @@ import Image from "next/image";
 
 const heroBackgroundImagePath = "/assets/hero-1.png";
 const smallheroBackgroundImagePath = "/assets/hero-1-small.png";
-const phoneImagePath = "/assets/hero-2.png";
+const phoneImagePath = "/assets/hero-2.svg";
 
 const buttonText = "Request a Demo";
 const formattedButtonText =

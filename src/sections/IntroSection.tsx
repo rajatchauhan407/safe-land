@@ -4,8 +4,8 @@ import Image from "next/image";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const introImageOnePath = "/assets/intro-1.png";
-const introImageTwoPath = "/assets/intro-2.png";
-const introImageTwoSmallPath = "/assets/intro-2-mobile.png";
+const introImageTwoPath = "/assets/intro-2.svg";
+const introImageTwoSmallPath = "/assets/intro-2-mobile.svg";
 
 const IntroSection = () => {
   const theme = useTheme();

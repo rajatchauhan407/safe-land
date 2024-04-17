@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const featuresImagePath = "/assets/features-1.png";
 
-const reportIconPath = "/assets/features-icon-report.png";
-const reportImagePath = "/assets/features-2.png";
-const checkInIconPath = "/assets/features-icon-checkin.png";
-const checkInImagePath = "/assets/features-3.png";
-const smsIconPath = "/assets/features-icon-sms.png";
-const smsImagePath = "/assets/features-4.png";
-const sosIconPath = "/assets/features-icon-sos.png";
-const sosImagePath = "/assets/features-5.png";
+const reportIconPath = "/assets/features-icon-report.svg";
+const reportImagePath = "/assets/features-2.svg";
+const checkInIconPath = "/assets/features-icon-checkin.svg";
+const checkInImagePath = "/assets/features-3.svg";
+const smsIconPath = "/assets/features-icon-sms.svg";
+const smsImagePath = "/assets/features-4.svg";
+const sosIconPath = "/assets/features-icon-sos.svg";
+const sosImagePath = "/assets/features-5.svg";
 
 interface FeatureCardProps {
   iconPath: string;
