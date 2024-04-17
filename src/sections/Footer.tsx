@@ -54,6 +54,24 @@ const NavItem = styled("a")(({ theme }) => ({
 const Footer: React.FC = () => {
   const isMobile = useMediaQuery("(max-width:600px)");
 
+  const handleDownload = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    event.preventDefault();
+    // Assuming you're using a direct link to the S3 file
+    const pdfUrl =
+      "https://techandtribe-safe.s3.us-east-2.amazonaws.com/SAFE_TechTribe.pdf";
+
+    // Trigger the download
+    window.open(pdfUrl, "_blank");
+  };
+
+  /* function handleDownload(
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ): void {
+    throw new Error("Function not implemented.");
+  } */
+
   return (
     <FooterContainer>
       <Box sx={{width:"95%"}}>
