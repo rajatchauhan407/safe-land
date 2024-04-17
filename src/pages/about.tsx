@@ -82,12 +82,12 @@ const About = () => {
       <Box>
         <Box style={{backgroundImage:"url('/assets/AboutUsHeader.png')", color:"white", height:"300px",  width:isMobile?"100%":"100%", margin:isMobile?"0":"auto"}}>
             <Box style={{marginRight:isMobile?"0":"auto" ,
-  marginLeft:isMobile?"0": "10rem"}}>
+  marginLeft:isMobile?"1rem": "10rem"}}>
                 <Box style={{padding:"1rem" , paddingBottom:"0"}}>
                     <h1 style={{color:"#FD9201", paddingLeft:"15px",borderLeft:"5px solid #FD9201", }}>ABOUT US</h1>
                 </Box>
                 <Box style={{width:isMobile?"100%":"45%" , paddingLeft:"20px"}}>
-                    <h3>
+                    <h3 style={{padding:"1rem 0"}}>
                     TechTribe is a collaborative and diverse team that delivers  impactful solutions.
                     </h3>
                     <p>Our diverse team combines skills in branding, UX/UI, and visual design with expertise in front-end and back-end development, ensuring a comprehensive approach to project success through innovation and collaboration.</p>
@@ -96,9 +96,9 @@ const About = () => {
         </Box>
 
         <Box style={{padding:"1rem", margin:"auto", width:isMobile?"100%": "80%"}}>
-            <h2 style={{textAlign:"left"}}>Meet The Tech Tribe team</h2>
+            <h2 style={{textAlign:"left", paddingLeft:isMobile?".5rem":"0", padding:"1rem 0"}}>Meet The Tech Tribe team</h2>
 
-            <Box style={{display:"flex", flexDirection:isMobile?"column":"row" , gap:"1rem", flexWrap:"wrap", textAlign:"left"}}>
+            <Box style={{display:"flex", flexDirection:isMobile?"column":"row" , gap:"1rem", flexWrap:"wrap", textAlign:"left",paddingLeft:isMobile?".5rem": "0"}}>
                 {teamInfo.map((teamMember, index) => (
                     <Card key={index} style={{flex: isMobile ? "1 0 100%" : "1 0 31%", backgroundColor:"#F8F8FF"}}>
                         <CardContent>
@@ -113,7 +113,7 @@ const About = () => {
                                 </Box>
                                 <Box style={{flex:"80%"}}>
                                     <h3>{teamMember.name}</h3>
-                                    <h4>{teamMember.title}</h4>
+                                    <h4 style={{color:"#494949", padding:"1rem 0"}}>{teamMember.title}</h4>
                                     <Box>
                                         <Link href={teamMember.linkedIn}>
                                             <LinkedinIcon/>
@@ -131,7 +131,7 @@ const About = () => {
             </Box>
         </Box >
 
-        <Box style={{display:"flex", flexDirection:isMobile?"column":"row" , gap:"1rem", flexWrap:"wrap", textAlign:"left", marginLeft:isMobile?"0":"auto", width:isMobile?"100%":"89%", padding:isMobile?"1rem":"0"}}>
+        <Box style={{display:"flex", flexDirection:isMobile?"column":"row" , gap:"1rem", flexWrap:"wrap", textAlign:"left", marginLeft:isMobile?"0":"auto", width:isMobile?"100%":"89%", padding:isMobile?"1rem":"0", paddingBottom:"1rem",paddingLeft:isMobile?"1.5rem": "0"}}>
             <Card style={{flex: isMobile ? "1 0 100%" : "0 0 28.6%", backgroundColor:"#F8F8FF"}}>
                             <CardContent>
                                 <Box style={{display:"flex" , gap:"1rem"}}>
@@ -145,7 +145,7 @@ const About = () => {
                                     </Box>
                                     <Box style={{flex:"80%"}}>
                                         <h3>Salman Shahzad</h3>
-                                        <h4>Product Designer</h4>
+                                        <h4 style={{color:"#494949", padding:"1rem 0"}}>Product Designer</h4>
                                         <Box>
                                             <Link href="https://www.linkedin.com/in/shahzadsalman/">
                                                 <LinkedinIcon/>
@@ -169,7 +169,7 @@ const About = () => {
                                     </Box>
                                     <Box style={{flex:"80%"}}>
                                         <h3>Stephany Becerra</h3>
-                                        <h4>Product Designer</h4>
+                                        <h4 style={{color:"#494949", padding:"1rem 0"}}>Product Designer</h4>
                                         <Box>
                                             <Link href="in/stephanyxjade/">
                                                 <LinkedinIcon/>
