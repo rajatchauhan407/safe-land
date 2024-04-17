@@ -59,13 +59,13 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           variant="h6"
           sx={{
             fontWeight: 700,
-            fontSize: "16px",
+            fontSize: "20px",
             marginTop: 1,
           }}
         >
           {title}
         </Typography>
-        {isActive && <Typography sx={{ fontSize: "14px" }}>{text}</Typography>}
+        {isActive && <Typography sx={{ fontSize: "16px" }}>{text}</Typography>}
       </Box>
     </Paper>
   );
@@ -92,25 +92,25 @@ const FeaturesSection = () => {
     {
       iconPath: reportIconPath,
       title: "Incident Report",
-      text: "Swift reporting for immediate action instant alerts to supervisors and workers.",
+      text: "Swiftly report incidents in real-time, ensuring immediate response and resolution.",
       imagePath: reportImagePath,
     },
     {
       iconPath: checkInIconPath,
       title: "GPS Check-In/Check-Out",
-      text: "Accurate tracking of worker’s shifts and workforce management for supervisors.",
+      text: "Seamlessly track worker attendance on-site using GPS technology, ensuring accurate and efficient time management.",
       imagePath: checkInImagePath,
     },
     {
       iconPath: smsIconPath,
       title: "SMS Notifications",
-      text: "Real time updates for stakeholders and emergency services.",
+      text: "Keep stakeholders informed with real-time SMS notifications, ensuring everyone stays connected and up-to-date.",
       imagePath: smsImagePath,
     },
     {
       iconPath: sosIconPath,
       title: "One-Touch SOS",
-      text: "Workers can instantly alert a supervisor when facing danger with a single touch.",
+      text: "Provide instant access to emergency assistance at the touch of a button, enhancing worker safety.",
       imagePath: sosImagePath,
     },
   ];
@@ -124,6 +124,7 @@ const FeaturesSection = () => {
         position: "relative",
         paddingBottom: 4,
         marginTop: 0,
+        minHeight: "100vh",
       }}
     >
       {/* Background image with the word "Features" */}

@@ -79,7 +79,7 @@ const PreFooterSection: React.FC = () => {
               component="h1"
               fontWeight={800}
               color="#1e1e1e"
-              sx={{ fontSize: isMobile ? '32px' : undefined, textAlign: 'center' }} 
+              sx={{ fontSize: isMobile ? '36px' : undefined, textAlign: 'center' }} 
             >
               <span style={{ fontWeight: 200 }}>Have</span> questions?
             </Typography>
