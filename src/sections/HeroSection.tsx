@@ -128,14 +128,14 @@ const HeroSection = () => {
               },
             }}
           >
-            <Typography component="li" variant="subtitle1">
-              Real-time hazard alerts
+            <Typography component="li" variant="subtitle1" fontSize={"18px"}>
+              Prioritize workers safety
             </Typography>
-            <Typography component="li" variant="subtitle1">
-              Streamlined one-touch reporting
+            <Typography component="li" variant="subtitle1" fontSize={"18px"}>
+              Enhance emergency response
             </Typography>
-            <Typography component="li" variant="subtitle1">
-              Swift emergency response
+            <Typography component="li" variant="subtitle1" fontSize={"18px"}>
+              Proactively address on-site hazards.
             </Typography>
           </Box>
           <StyledDemoButton
