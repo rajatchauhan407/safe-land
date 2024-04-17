@@ -5,11 +5,15 @@ import Image from "next/image";
 
 const logoSAFE = "/assets/logoSAFE-white.png";
 const logoTechTribe = "/assets/tech-tribe-logo.svg";
+const proposalDocumentLink = "https://techandtribe-safe.s3.us-east-2.amazonaws.com/SAFE_TechTribe.pdf";
 
-const FooterContainer = styled("footer")(({ theme }) => ({
-  backgroundColor: "#1e1e1e",
-  color: "#ffffff",
-  padding: "40px 20px",
+const FooterContainer = styled('footer')(({ theme }) => ({
+  backgroundColor: '#1e1e1e',
+  color: '#ffffff',
+  padding: '40px 20px',
+  display: 'flex',  
+  alignItems: 'center', 
+  justifyContent: 'center'
 }));
 
 const buttonText = "Download Proposal";
@@ -70,6 +74,7 @@ const Footer: React.FC = () => {
 
   return (
     <FooterContainer>
+      <Box sx={{width:"95%"}}>
       <Grid container spacing={isMobile ? 2 : 4} justifyContent="center">
         {/* Left Column */}
         <Grid
@@ -92,13 +97,11 @@ const Footer: React.FC = () => {
           <Typography variant="body2" fontSize={"16px"} marginBottom={3}>
             © 2024 Site Alert For Emergency. All rights reserved
           </Typography>
-          <StyledDemoButton
-            variant="contained"
-            onClick={handleDownload}
-            sx={{ margin: isMobile ? "auto" : "none" }}
-          >
-            {formattedButtonText}
-          </StyledDemoButton>
+          <a href={proposalDocumentLink} download target="_blank">
+            <StyledDemoButton variant="contained">
+              {formattedButtonText}
+            </StyledDemoButton>
+          </a>
         </Grid>
 
         {/* Right Column */}
@@ -138,6 +141,7 @@ const Footer: React.FC = () => {
           </div>
         </Grid>
       </Grid>
+      </Box>
     </FooterContainer>
   );
 };

@@ -44,11 +44,11 @@ const IntroSection = () => {
         <Box
           sx={{ maxWidth: "500px", textAlign: { xs: "center", md: "left" } }}
         >
-          <Typography variant="h4" component="h2" gutterBottom>
+          <Typography variant="h3" component="h2" gutterBottom>
             Securing sites,{" "}
             <span style={{ fontWeight: 700 }}>protecting lives.</span>
           </Typography>
-          <Typography variant="body1" sx={{ marginBottom: theme.spacing(2) }}>
+          <Typography variant="body1" sx={{ marginBottom: theme.spacing(2), fontSize:"18px" }}>
             SAFE is a mobile app that helps construction companies prioritize
             worker safety, enhance emergency response, and proactively address
             on-site hazards.

@@ -78,11 +78,10 @@ const CTASection: React.FC = () => {
             <Grid item xs={12} md={8}>
               <Typography 
                 variant="h3"
-                component="h1"
+                component="h2"
                 gutterBottom
                 fontWeight={800}
                 color="#ffffff"
-                sx={{ fontSize: isMobile ? '32px' : undefined }} 
               >
                 <span style={{ fontWeight: 200 }}>Try Our</span> App Today!
               </Typography>
