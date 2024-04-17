@@ -31,20 +31,20 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         borderRadius: 4,
         border: "1px solid #1E1E1E",
         background: "#FFFFFF",
-        height: 180,
+        height: 200,
         ":hover": {
           boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // subtle hover effect
         },
       }}
     >
       <Box sx={{ width: "100%" }}>
-        <Box sx={{ my: 2 }}>
+        <Box sx={{ mt: 1 }}>
           <Image src={iconUrl} alt={title} width={48} height={48} />
         </Box>
-        <Typography variant="subtitle1" fontWeight="bold" color="#4a4a4b">
+        <Typography variant="subtitle1" fontWeight="bold" color="#4a4a4b" fontSize={"20px"}>
           {title}
         </Typography>
-        <Typography variant="body2" color="#6e6e73">
+        <Typography variant="body2" fontSize={"16px"} color="#6e6e73">
           {description}
         </Typography>
       </Box>
@@ -56,7 +56,7 @@ const FutureFeaturesSection = () => {
   const theme = useTheme();
 
   return (
-    <Box sx={{ flexGrow: 1, p: 10, backgroundColor: "#F8F8FF" }}>
+    <Box sx={{ flexGrow: 1, p: 10, backgroundColor: "#F8F8FF", minHeight:"50vh" }}>
       <Typography
         variant="h3"
         component="h2"
@@ -65,7 +65,7 @@ const FutureFeaturesSection = () => {
         color={"#4a4a4b"}
       >
         <strong>Features</strong>{" "}
-        <span style={{ fontWeight: 300 }}>Coming Soon</span>
+        <span style={{ fontWeight: 200 }}>Coming Soon</span>
       </Typography>
       <Grid container justifyContent="center" spacing={2}>
         <Grid item xs={12} md={4}>
