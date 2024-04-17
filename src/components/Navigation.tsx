@@ -73,7 +73,7 @@ const RightDrawer: React.FC<RightDrawerProps> = ({ isOpen, toggleDrawer }) => {
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Link href="/team" passHref>
+                <Link href="/about" passHref>
                   <Typography
                     variant="button"
                     sx={{
@@ -183,7 +183,7 @@ const NavigationBar = () => {
               How it works
             </Typography>
           </Link>)}
-          {isLargeScreen && (<Link href="/team" passHref>
+          {isLargeScreen && (<Link href="/about" passHref>
             <Typography
               variant="button"
               sx={{
