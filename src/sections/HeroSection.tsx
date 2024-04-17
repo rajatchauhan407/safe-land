@@ -24,6 +24,7 @@ const StyledDemoButton = styled(Button)(({ theme }) => ({
     color: "#1e1e1e",
   },
 }));
+
 const HeroSection = () => {
   return (
     <Container
