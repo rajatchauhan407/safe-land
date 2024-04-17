@@ -54,6 +54,7 @@ const HeroSection = () => {
         alignItems: "center",
         justifyContent: "center",
         overflow: "hidden",
+        mt: "40px",
       }}
     >
       {/* Background image */}
