@@ -74,13 +74,13 @@ const teamInfo = [{
 const About = () => {
 
     const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <>
       <NavigationBar />
       {/* Add more sections as needed */}
       <Box>
-        <Box style={{backgroundImage:"url('/assets/AboutUsHeader.png')", color:"white", height:"300px",  width:isMobile?"100%":"100%", margin:isMobile?"0":"auto"}}>
+        <Box style={{backgroundImage:"url('/assets/AboutUsHeader.png')", color:"white", height:"350px",  width:isMobile?"100%":"100%", margin:isMobile?"0":"auto", padding:isMobile?"4rem 0":"4rem 0"}}>
             <Box style={{marginRight:isMobile?"0":"auto" ,
   marginLeft:isMobile?"1rem": "10rem"}}>
                 <Box style={{padding:"1rem" , paddingBottom:"0"}}>
