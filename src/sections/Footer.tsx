@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
           <Typography variant="body2">
             <NavItem href="/">Home</NavItem>
             <NavItem href="#how-it-works">How it works</NavItem>
-            <NavItem href="/team">Meet the team</NavItem>
+            <NavItem href="/about">Meet the team</NavItem>
           </Typography>
           <div
             style={{
