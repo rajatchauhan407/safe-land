@@ -13,6 +13,7 @@ import HeroSection from "../sections/HeroSection";
 import IntroSection from "@/sections/IntroSection";
 import FeaturesSection from "../sections/FeaturesSection";
 import AppPreview from "../sections/CTASection";
+import PreFooterSection from "@/sections/PreFooter";
 import Footer from "../sections/Footer";
 
 const HomePage = () => {
@@ -24,7 +25,7 @@ const HomePage = () => {
       <IntroSection />
       <FeaturesSection />
       <AppPreview />
-      {/* Add more sections as needed */}
+      <PreFooterSection />
       <Footer />
     </>
   );

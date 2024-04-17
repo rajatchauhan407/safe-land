@@ -59,7 +59,7 @@ const CTASection: React.FC = () => {
           src={mobileOverlayPath}
           alt="Mobile Overlay"
           layout="fill"
-          objectFit="cover"
+          objectFit="fit"
           quality={100}
           priority
         />
