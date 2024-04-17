@@ -77,7 +77,6 @@ const PreFooterSection: React.FC = () => {
             <Typography 
               variant="h3"
               component="h1"
-              gutterBottom
               fontWeight={800}
               color="#1e1e1e"
               sx={{ fontSize: isMobile ? '32px' : undefined, textAlign: 'center' }} 
@@ -85,7 +84,7 @@ const PreFooterSection: React.FC = () => {
               <span style={{ fontWeight: 200 }}>Have</span> questions?
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center', mt: isMobile ? 2 : 3 }}>
+          <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center', mt: isMobile ? 1 : 2 }}>
             <a href="https://calendly.com/techandtribe/30min" target="_blank" rel="noopener noreferrer">
               <StyledDemoButton variant="contained">
                 {formattedButtonText}
