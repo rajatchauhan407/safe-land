@@ -72,21 +72,21 @@ const FutureFeaturesSection = () => {
           <FeatureCard
             iconUrl={IconSimulation}
             title="Simulation"
-            description="Check workers at safe zone"
+            description="Simulate emergency scenarios to train and prepare workers for real-life situations."
           />
         </Grid>
         <Grid item xs={12} md={4}>
           <FeatureCard
             iconUrl={IconFirstAid}
             title="First Aid Instructions"
-            description="Customized on-screen and injury specific first aid instructions"
+            description="Access first aid instructions providing essential guidance during emergencies."
           />
         </Grid>
         <Grid item xs={12} md={4}>
           <FeatureCard
             iconUrl={IconAccidentHistory}
             title="Accident History"
-            description="Review incident history in-app for improvements in safety measures."
+            description="Access past incidents data for insights and proactive safety enhancements."
           />
         </Grid>
       </Grid>
