@@ -84,7 +84,7 @@ const RightDrawer: React.FC<RightDrawerProps> = ({ isOpen, toggleDrawer }) => {
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <Link href="/team" passHref>
+                <Link href="/about" passHref>
                   <Typography
                     variant="button"
                     sx={{
@@ -179,52 +179,46 @@ const NavigationBar = () => {
         </Link>
 
         {/* Navigation Links */}
-        <Box sx={{ display: "flex", alignItems: "center", gap: "24px" }}>
-          {isLargeScreen && (
-            <Link href="/" passHref>
-              <Typography
-                variant="button"
-                sx={{
-                  color: "#000",
-                  textTransform: "none",
-                  fontSize: "1rem",
-                  cursor: "pointer",
-                }}
-              >
-                Home
-              </Typography>
-            </Link>
-          )}
-          {isLargeScreen && (
-            <Link href="#how-it-works" passHref>
-              <Typography
-                variant="button"
-                sx={{
-                  color: "#000",
-                  textTransform: "none",
-                  fontSize: "1rem",
-                  cursor: "pointer",
-                }}
-              >
-                How it works
-              </Typography>
-            </Link>
-          )}
-          {isLargeScreen && (
-            <Link href="/team" passHref>
-              <Typography
-                variant="button"
-                sx={{
-                  color: "#000",
-                  textTransform: "none",
-                  fontSize: "1rem",
-                  cursor: "pointer",
-                }}
-              >
-                Meet the team
-              </Typography>
-            </Link>
-          )}
+        <Box sx={{ display: "flex", alignItems: "center", gap: "24px" }} >
+          {isLargeScreen && (<Link href="/" passHref>
+            <Typography
+              variant="button"
+              sx={{
+                color: "#000",
+                textTransform: "none",
+                fontSize: "1rem",
+                cursor: "pointer",
+              }}
+            >
+              Home
+            </Typography>
+          </Link>)}
+          {isLargeScreen && (<Link href="#how-it-works" passHref>
+            <Typography
+              variant="button"
+              sx={{
+                color: "#000",
+                textTransform: "none",
+                fontSize: "1rem",
+                cursor: "pointer",
+              }}
+            >
+              How it works
+            </Typography>
+          </Link>)}
+          {isLargeScreen && (<Link href="/about" passHref>
+            <Typography
+              variant="button"
+              sx={{
+                color: "#000",
+                textTransform: "none",
+                fontSize: "1rem",
+                cursor: "pointer",
+              }}
+            >
+              Meet the team
+            </Typography>
+          </Link>)}
 
           {/* Request a Demo Button */}
           {isLargeScreen && (
