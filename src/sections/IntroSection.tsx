@@ -9,7 +9,7 @@ const IntroSection = () => {
   const theme = useTheme();
 
   return (
-    <Grid container spacing={0} sx={{ marginTop: "40px" }}>
+    <Grid container spacing={0} sx={{ marginTop: "40px", marginBottom: 0 }}>
       <Grid item xs={12} md={4}>
         <Box sx={{ width: 418, position: "relative" }}>
           <Image
