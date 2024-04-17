@@ -160,12 +160,14 @@ const NavigationBar = () => {
 
   return (
     <AppBar
-      position="sticky"
+      position="fixed"
       color="inherit"
       elevation={0}
       sx={{
         background: "#ffffff",
         boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.2)",
+        top: 0,
+        zIndex: 1100,
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between", padding: "0 30px" }}>
