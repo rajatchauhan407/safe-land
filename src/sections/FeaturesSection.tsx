@@ -59,13 +59,13 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           variant="h6"
           sx={{
             fontWeight: 700,
-            fontSize: "16px",
+            fontSize: "20px",
             marginTop: 1,
           }}
         >
           {title}
         </Typography>
-        {isActive && <Typography sx={{ fontSize: "14px" }}>{text}</Typography>}
+        {isActive && <Typography sx={{ fontSize: "16px" }}>{text}</Typography>}
       </Box>
     </Paper>
   );
@@ -123,6 +123,7 @@ const FeaturesSection = () => {
         position: "relative",
         paddingBottom: 4,
         marginTop: 0,
+        minHeight: "100vh",
       }}
     >
       {/* Background image with the word "Features" */}

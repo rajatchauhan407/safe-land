@@ -56,17 +56,16 @@ const FutureFeaturesSection = () => {
   const theme = useTheme();
 
   return (
-    <Box sx={{ flexGrow: 1, p: 10, backgroundColor: "#F8F8FF", minHeight:"50vh" }}>
-      <Typography
-        variant="h3"
-        component="h2"
-        textAlign="center"
-        mb={2}
-        color={"#4a4a4b"}
-      >
-        <strong>Features</strong>{" "}
-        <span style={{ fontWeight: 200 }}>Coming Soon</span>
-      </Typography>
+    <Box sx={{ flexGrow: 1, p: 3, backgroundColor: "#F8F8FF", minHeight:"50vh" }}>
+      <Typography 
+          variant="h3"
+          component="h2"
+          fontWeight={800}
+          color="#4a4a4b"
+          sx={{textAlign:'center'}}
+          >
+          <span style={{ fontWeight: 200 }}>Features</span> Coming Soon
+          </Typography>
       <Grid container justifyContent="center" spacing={2}>
         <Grid item xs={12} md={4}>
           <FeatureCard

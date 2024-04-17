@@ -76,9 +76,10 @@ const PreFooterSection: React.FC = () => {
           <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: "center" }}>
             <Typography 
               variant="h3"
-              component="h2"
+              component="h1"
               fontWeight={800}
               color="#1e1e1e"
+              sx={{ fontSize: isMobile ? '36px' : undefined, textAlign: 'center' }} 
             >
               <span style={{ fontWeight: 200 }}>Have</span> questions?
             </Typography>
