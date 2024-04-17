@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 
-import Logo from "@/assets/logo.svg";
+const logoPath = "/assets/logo.svg";
 
 const NavigationBar = () => {
   return (
@@ -16,7 +16,7 @@ const NavigationBar = () => {
       <Toolbar sx={{ justifyContent: "space-between", padding: "0 30px" }}>
         {/* Logo and Title */}
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Image src={Logo} alt="SAFE Logo" height={40} />
+          <Image src={logoPath} alt="SAFE Logo" width={138} height={40} />
         </Box>
 
         {/* Navigation Links */}
@@ -65,8 +65,18 @@ const NavigationBar = () => {
           <Button
             variant="contained"
             sx={{
-              backgroundColor: "#000",
-              "&:hover": { backgroundColor: "#333" },
+              backgroundColor: "#1e1e1e", //
+              color: "#ffffff",
+              fontWeight: 700,
+              borderRadius: "24px",
+              textTransform: "none",
+              padding: "8px",
+              paddingLeft: "40px",
+              paddingRight: "40px",
+              "&:hover": {
+                backgroundColor: "#fd9201",
+                color: "#ffffff",
+              },
             }}
           >
             Request a Demo

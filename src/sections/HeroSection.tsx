@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Grid,
-  Typography,
-  Button,
-  Container,
-  capitalize,
-} from "@mui/material";
+import { Box, Grid, Typography, Button, Container } from "@mui/material";
 import { styled } from "@mui/system";
 import Image from "next/image";
 
