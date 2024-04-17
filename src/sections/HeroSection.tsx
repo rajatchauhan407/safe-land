@@ -40,6 +40,10 @@ const HeroSection = () => {
   const theme = useTheme();
   const isMdDown = useMediaQuery(theme.breakpoints.down("md"));
 
+  const handleRequestDemoClick = () => {
+    window.open("https://calendly.com/techandtribe/30min", "_blank");
+  };
+
   return (
     <Container
       maxWidth={false}
@@ -134,7 +138,11 @@ const HeroSection = () => {
               Swift emergency response
             </Typography>
           </Box>
-          <StyledDemoButton variant="contained" style={{ marginTop: "25px" }}>
+          <StyledDemoButton
+            variant="contained"
+            style={{ marginTop: "25px" }}
+            onClick={handleRequestDemoClick}
+          >
             {formattedButtonText}
           </StyledDemoButton>
         </Grid>
