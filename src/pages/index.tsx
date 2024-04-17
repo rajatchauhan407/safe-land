@@ -15,6 +15,7 @@ import FeaturesSection from "../sections/FeaturesSection";
 import AppPreview from "../sections/CTASection";
 import PreFooterSection from "@/sections/PreFooter";
 import Footer from "../sections/Footer";
+import FutureFeaturesSection from "@/sections/FutureFeaturesSection";
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
       <HeroSection />
       <IntroSection />
       <FeaturesSection />
+      <FutureFeaturesSection />
       <AppPreview />
       <PreFooterSection />
       <Footer />
