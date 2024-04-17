@@ -13,4 +13,9 @@ root {
   --black: #1e1e1e;
   --offwhite: #f8f8ff;
   --white: #ffffff;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
 }
