@@ -117,6 +117,7 @@ const FeaturesSection = () => {
 
   return (
     <Box
+      id="how-it-works"
       sx={{
         backgroundColor: "#1e1e1e",
         color: "#ffffff",
