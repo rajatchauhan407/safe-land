@@ -78,19 +78,16 @@ const CTASection: React.FC = () => {
             <Grid item xs={12} md={8}>
               <Typography 
                 variant="h3"
-                component="h1"
+                component="h2"
                 gutterBottom
                 fontWeight={800}
                 color="#ffffff"
-                sx={{ fontSize: isMobile ? '32px' : undefined }} 
               >
                 <span style={{ fontWeight: 200 }}>Try Our</span> App Today!
               </Typography>
               
               <Typography variant="body1" color="#ffffff" sx={{ fontSize: isMobile ? '16px' : '20px'}}>
-                SAFE utilizes GPS and QR code technology for accurate site-specific
-                tracking and provides real-time hazard alerts based on worker roles
-                and activities.
+                Experience the power of SAFE with a live demo! Start your journey to revolutionize safety in your construction company and transform your workplace.
               </Typography>
               <Box mt={3}>
                 <a href="https://calendly.com/techandtribe/30min" target="_blank" rel="noopener noreferrer">

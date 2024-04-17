@@ -1,9 +1,18 @@
 import React from "react";
-import { Box, Grid, Typography, Button, Container } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  Button,
+  Container,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { styled } from "@mui/system";
 import Image from "next/image";
 
 const heroBackgroundImagePath = "/assets/hero-1.png";
+const smallheroBackgroundImagePath = "/assets/hero-1-small.png";
 const phoneImagePath = "/assets/hero-2.png";
 
 const buttonText = "Request a Demo";
@@ -23,10 +32,18 @@ const StyledDemoButton = styled(Button)(({ theme }) => ({
   "&:hover": {
     backgroundColor: "#ffffff",
     color: "#1e1e1e",
+    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.6)", // subtle hover effect
   },
 }));
 
 const HeroSection = () => {
+  const theme = useTheme();
+  const isMdDown = useMediaQuery(theme.breakpoints.down("md"));
+
+  const handleRequestDemoClick = () => {
+    window.open("https://calendly.com/techandtribe/30min", "_blank");
+  };
+
   return (
     <Container
       maxWidth={false}
@@ -36,11 +53,12 @@ const HeroSection = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        overflow: "hidden",
       }}
     >
       {/* Background image */}
       <Image
-        src={heroBackgroundImagePath}
+        src={isMdDown ? smallheroBackgroundImagePath : heroBackgroundImagePath}
         alt="Background"
         layout="fill"
         objectFit="cover"
@@ -48,7 +66,6 @@ const HeroSection = () => {
         priority
       />
 
-      {/* Text content centered on the grid but aligned left */}
       <Grid container justifyContent="center" style={{ height: "100%" }}>
         <Grid
           item
@@ -60,7 +77,7 @@ const HeroSection = () => {
             justifyContent: "center",
             alignItems: "flex-start",
             zIndex: 2,
-            marginLeft: -50,
+            marginLeft: { xs: 10, md: -50 },
             padding: 0,
             color: "white",
           }}
@@ -111,39 +128,47 @@ const HeroSection = () => {
               },
             }}
           >
-            <Typography component="li" variant="subtitle1">
-              Real-time hazard alerts
+            <Typography component="li" variant="subtitle1" fontSize={"18px"}>
+              Prioritize workers safety
             </Typography>
-            <Typography component="li" variant="subtitle1">
-              Streamlined one-touch reporting
+            <Typography component="li" variant="subtitle1" fontSize={"18px"}>
+              Enhance emergency response
             </Typography>
-            <Typography component="li" variant="subtitle1">
-              Swift emergency response
+            <Typography component="li" variant="subtitle1" fontSize={"18px"}>
+              Proactively address on-site hazards.
             </Typography>
           </Box>
-          <StyledDemoButton variant="contained" style={{ marginTop: "25px" }}>
+          <StyledDemoButton
+            variant="contained"
+            style={{ marginTop: "25px" }}
+            onClick={handleRequestDemoClick}
+          >
             {formattedButtonText}
           </StyledDemoButton>
         </Grid>
       </Grid>
 
       {/* Phone image */}
-      <Box
-        position="absolute"
-        top="50%"
-        right="20%"
-        style={{ transform: "translateY(-45%)" }}
-        zIndex="3"
-      >
-        <Image
-          src={phoneImagePath}
-          alt="Phone"
-          width={241.04}
-          height={443.73}
-          objectFit="contain"
-          priority
-        />
-      </Box>
+      {!isMdDown && (
+        <Box
+          position="absolute"
+          top="50%"
+          right="20%"
+          sx={{
+            transform: "translateY(-50%)",
+            zIndex: 3,
+          }}
+        >
+          <Image
+            src={phoneImagePath}
+            alt="Phone"
+            width={241.04}
+            height={443.73}
+            objectFit="contain"
+            priority
+          />
+        </Box>
+      )}
     </Container>
   );
 };

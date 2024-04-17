@@ -14,8 +14,24 @@ root {
   --offwhite: #f8f8ff;
   --white: #ffffff;
   text-decoration: none;
+  
 }
 
-a{
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+a {
   text-decoration: none;
 }
