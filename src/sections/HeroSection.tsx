@@ -13,6 +13,7 @@ const formattedButtonText =
 const StyledDemoButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#fd9201",
   color: "#1e1e1e",
+  fontSize: "18px",
   fontWeight: 700,
   borderRadius: "24px",
   textTransform: "none",
@@ -24,6 +25,7 @@ const StyledDemoButton = styled(Button)(({ theme }) => ({
     color: "#1e1e1e",
   },
 }));
+
 const HeroSection = () => {
   return (
     <Container

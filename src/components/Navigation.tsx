@@ -201,7 +201,7 @@ const NavigationBar = () => {
           {isLargeScreen && (<Button
             variant="contained"
             sx={{
-              backgroundColor: "#1e1e1e", //
+              backgroundColor: "#1e1e1e",
               color: "#ffffff",
               fontWeight: 700,
               borderRadius: "24px",
