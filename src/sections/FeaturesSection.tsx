@@ -49,6 +49,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         "&:hover": {
           backgroundColor: "#4c4c4c",
           cursor: "pointer",
+          boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.6)", // subtle hover effect
         },
       }}
     >

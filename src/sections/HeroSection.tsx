@@ -23,6 +23,7 @@ const StyledDemoButton = styled(Button)(({ theme }) => ({
   "&:hover": {
     backgroundColor: "#ffffff",
     color: "#1e1e1e",
+    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.6)", // subtle hover effect
   },
 }));
 
