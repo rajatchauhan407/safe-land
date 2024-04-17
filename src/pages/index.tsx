@@ -19,7 +19,6 @@ const HomePage = () => {
       <FeaturesSection />
       <FutureFeaturesSection />
       <AppPreview />
-      
       <PreFooterSection />
 
       <Footer />
